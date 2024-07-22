@@ -73,3 +73,22 @@ export async function obterServicos(){
         console.error(error)
     }
 }
+
+export async function criarAgendamento(data){
+    try {
+        const response = await axios.post(`${url}/agendamentos`, data)
+        alert('Agendamento criado com sucesso');
+        return response.data
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+export async function obterMeusAgendamentos(){
+    try {
+        const response = await axios.get(`${url}/usuarios/perfil/agendamentos`)
+        return response.data
+    } catch (error) {
+        console.error(error)
+    }
+}

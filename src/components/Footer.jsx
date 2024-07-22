@@ -21,7 +21,7 @@ export default function Footer(){
         <div className="minhaconta" style={{display: "flex", flexDirection: "column"}}>
             <h2>MINHA CONTA</h2>
             <a href="/perfil">Minha conta</a>
-            <a href="">Meus Agendamentos</a>
+            <a href="/agendamentos">Meus Agendamentos</a>
         </div>
 
         <div className="redessociais" style={{display: "flex", flexDirection: "column"}}>

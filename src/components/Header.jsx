@@ -32,7 +32,7 @@ export default function Header() {
             <a href="/" style={{ fontSize: "50px" }}>Página Inicial</a>
             {isLoggedIn ? (
                 <div>
-                    <a href="/agendamento" style={{ fontSize: "50px" }}>Agendar</a>
+                    <a href="/agendar" style={{ fontSize: "50px" }}>Agendar</a>
                     <button onClick={handleLogout} style={{ fontSize: "50px" }}>Logout</button>
                 </div>
                 
