@@ -80,47 +80,69 @@ export default function Agendamento() {
     }
 
     return (
-        <div style={{height: "100vh"}}>
+        <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-8">
             <Helmet>
                 <title>Agendar - Barbearia do Tim</title>
             </Helmet>
-            <form action="" method="post" onSubmit={handleClickButton}>
-            <h2>Barbeiros: </h2>
-            <ul>
-                {funcionarios.map((funcionario) => (
-                    <li key={funcionario.id}>
-                        <input 
-                            type="radio" 
-                            name="funcionario" 
-                            id={`funcionario-${funcionario.id}`} 
-                            onClick={handleClickBarbeiros}
-                        />
-                        <label htmlFor={`funcionario-${funcionario.id}`}>{funcionario.nome}</label>
-                    </li>
-                ))}
-            </ul>
-            <h2>Serviços:</h2>
-            <ul>
-                {servicos.map((servico) => (
-                    <li key={servico.id}>
-                        <input 
-                            type="radio" 
-                            name="servico" 
-                            id={`servico-${servico.id}`}
-                            onClick={handleClickServiços}
-                            
-                        />
-                        <label htmlFor={`servico-${servico.id}`}>{servico.nome}</label>
-                    </li>
-                ))}
-            </ul>
-                <h2>Data</h2>
-                <input type="date" name="" id="" onChange={handleChangeData}/>
-                <h2>Hora</h2>
-                <input type="time" name="" id="" onChange={handleChangeHora}/> <br></br>
-                <button type="submit">Marcar Agendamento</button>
+            <form 
+                onSubmit={handleClickButton} 
+                className="bg-white p-6 rounded-lg shadow-lg space-y-6 w-full max-w-lg"
+            >
+                <h2 className="text-xl font-semibold mb-4">Barbeiros:</h2>
+                <ul className="space-y-2">
+                    {funcionarios.map((funcionario) => (
+                        <li key={funcionario.id} className="flex items-center">
+                            <input 
+                                type="radio" 
+                                name="funcionario" 
+                                id={`funcionario-${funcionario.id}`} 
+                                className="mr-2"
+                                onChange={handleClickBarbeiros}
+                            />
+                            <label htmlFor={`funcionario-${funcionario.id}`} className="text-lg">{funcionario.nome}</label>
+                        </li>
+                    ))}
+                </ul>
+
+                <h2 className="text-xl font-semibold mb-4">Serviços:</h2>
+                <ul className="space-y-2">
+                    {servicos.map((servico) => (
+                        <li key={servico.id} className="flex items-center">
+                            <input 
+                                type="radio" 
+                                name="servico" 
+                                id={`servico-${servico.id}`} 
+                                className="mr-2"
+                                onChange={handleClickServiços}
+                            />
+                            <label htmlFor={`servico-${servico.id}`} className="text-lg">{servico.nome}</label>
+                        </li>
+                    ))}
+                </ul>
+
+                <div className="space-y-4">
+                    <h2 className="text-xl font-semibold">Data:</h2>
+                    <input 
+                        type="date" 
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                        onChange={handleChangeData}
+                    />
+
+                    <h2 className="text-xl font-semibold">Hora:</h2>
+                    <input 
+                        type="time" 
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                        onChange={handleChangeHora}
+                    />
+                </div>
+
+                <button 
+                    type="submit" 
+                    className="w-full bg-black text-white py-2 px-4 rounded-md shadow-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black"
+                >
+                    Marcar Agendamento
+                </button>
             </form>
-            
         </div>
     );
 }

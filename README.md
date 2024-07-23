@@ -18,6 +18,7 @@
     <img src="./imagensgithub/registro.PNG" alt="Image Example" width="400px">
     <img src="./imagensgithub/login.PNG" alt="Image Example" width="400px">
     <img src="./imagensgithub/meuperfil.PNG" alt="Image Example" width="400px">
+    <img src="./imagensgithub/agendar.PNG" alt="Image Example" width="400px">
     <img src="./imagensgithub/meusagendamentos.PNG" alt="Image Example" width="400px">
     <img src="./imagensgithub/footer.PNG" alt="Image Example" width="400px">
 </p>
