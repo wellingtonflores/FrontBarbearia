@@ -6,19 +6,20 @@
  <a href="#contribute">Contribute</a>
 </p>
 
-<p align="center">
-    <b>Simple description of what your project do or how to use it</b>
-</p>
 
 <p align="center">
-     <a href="PROJECT__URL">📱 Visit this Project</a>
+     <a href="https://github.com/wellingtonflores/FrontBarbearia">📱 Visit this Project</a>
 </p>
 
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center">
-    <img src="../.github/example.png" alt="Image Example" width="400px">
-    <img src="../.github/example.png" alt="Image Example" width="400px">
+    <img src="paginainicial.PNG" alt="Image Example" width="400px">
+    <img src="registro.PNG" alt="Image Example" width="400px">
+    <img src="login.PNG" alt="Image Example" width="400px">
+    <img src="meuperfil.PNG" alt="Image Example" width="400px">
+    <img src="meusagendamentos.PNG" alt="Image Example" width="400px">
+    <img src="footer.PNG" alt="Image Example" width="400px">
 </p>
 
 <h2 id="technologies">💻 Technologies</h2>
