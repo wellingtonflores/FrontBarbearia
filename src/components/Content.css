@@ -1,0 +1,25 @@
+.content-background {
+    height: 100vh;
+    background-image: url('https://barbeariatorres.com.br/wp-content/uploads/2022/06/Foto-Daniel-Diniz-9-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-link:hover {
+    background-color: #333;
+  }
+  

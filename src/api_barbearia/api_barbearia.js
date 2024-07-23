@@ -49,7 +49,7 @@ export async function obterPerfilUsuario() {
 export async function atualizarPerfilUsuario(data) {
     try {
         const response = await axios.patch(`${url}/usuarios/perfil`, data);
-        console.log('Perfil atualizado com sucesso:', response.data); // Verifique a resposta após atualização
+        console.log('Perfil atualizado com sucesso:', response.data);
         return response.data;
     } catch (error) {
         console.error('Erro ao atualizar perfil do usuário:', error);

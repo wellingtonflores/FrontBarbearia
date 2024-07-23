@@ -80,7 +80,7 @@ export default function Agendamento() {
     }
 
     return (
-        <div>
+        <div style={{height: "100vh"}}>
             <Helmet>
                 <title>Agendar - Barbearia do Tim</title>
             </Helmet>

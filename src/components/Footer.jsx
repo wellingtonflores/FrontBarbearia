@@ -1,38 +1,53 @@
-export default function Footer(){
-    return (
-    <div className="footer" style={{display: "flex"}}>
-        <div className="institucional">
-            <h2>INSTITUCIONAL</h2>
-            <p>Sobre</p>
-            <p>Serviços</p>
-            <p>Politica de Privacidade</p>
+import React from 'react';
+
+export default function Footer() {
+  return (
+    <footer className="bg-black text-white py-10">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <h2 className="text-lg font-bold mb-4">INSTITUCIONAL</h2>
+          <ul>
+            <li className="mb-2">
+              <a href="#" className="text-blue-400 hover:underline">Sobre</a>
+            </li>
+            <li className="mb-2">
+              <a href="#" className="text-blue-400 hover:underline">Serviços</a>
+            </li>
+            <li className="mb-2">
+              <a href="#" className="text-blue-400 hover:underline">Política de Privacidade</a>
+            </li>
+          </ul>
         </div>
         
-        <div className="atendimento" >
-            <h2>ATENDIMENTO</h2>
-            <p>Telefone</p>
-            <p>(51)9999-9999</p>
-            <p>Horário de Funcionamento</p>
-            <p>Seg. à Sex. das 09h às 22h</p>
-            <p>Contato</p>
-            <a href="">contato@barbearia_tim.com.br</a>
+        <div>
+          <h2 className="text-lg font-bold mb-4">ATENDIMENTO</h2>
+          <ul>
+            <li className="mb-2">Telefone</li>
+            <li className="mb-2">(51) 9999-9999</li>
+            <li className="mb-2">Horário de Funcionamento</li>
+            <li className="mb-2">Seg. à Sex. das 09h às 22h</li>
+            <li className="mb-2">Contato</li>
+            <li><a href="mailto:wellingtonluiscardoso@hotmail.com" className="text-blue-400 hover:underline">wellingtonluiscardoso@hotmail.com</a></li>
+          </ul>
         </div>
 
-        <div className="minhaconta" style={{display: "flex", flexDirection: "column"}}>
-            <h2>MINHA CONTA</h2>
-            <a href="/perfil">Minha conta</a>
-            <a href="/agendamentos">Meus Agendamentos</a>
+        <div>
+          <h2 className="text-lg font-bold mb-4">MINHA CONTA</h2>
+          <ul>
+            <li className="mb-2"><a href="/perfil" className="text-blue-400 hover:underline">Minha conta</a></li>
+            <li className="mb-2"><a href="/agendamentos" className="text-blue-400 hover:underline">Meus Agendamentos</a></li>
+          </ul>
         </div>
 
-        <div className="redessociais" style={{display: "flex", flexDirection: "column"}}>
-            <h2>REDES SOCIAIS</h2>
-            <a href="">Instagram</a>
-            <a href="">Linkedin</a>
-            <a href="">GitHub</a>
+        <div>
+          <h2 className="text-lg font-bold mb-4">REDES SOCIAIS</h2>
+          <ul>
+            <li className="mb-2"><a href="https://www.instagram.com/wellingtonnluis/" className="text-blue-400 hover:underline">Instagram</a></li>
+            <li className="mb-2"><a href="https://www.linkedin.com/in/wellington-flores/" className="text-blue-400 hover:underline">Linkedin</a></li>
+            <li className="mb-2"><a href="https://github.com/wellingtonflores" className="text-blue-400 hover:underline">GitHub</a></li>
+          </ul>
         </div>
-    </div>
-        
-        
-    )
+      </div>
+    </footer>
+  );
 }
-
