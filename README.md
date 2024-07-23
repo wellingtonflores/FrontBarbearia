@@ -14,12 +14,12 @@
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center">
-    <img src="paginainicial.PNG" alt="Image Example" width="400px">
-    <img src="registro.PNG" alt="Image Example" width="400px">
-    <img src="login.PNG" alt="Image Example" width="400px">
-    <img src="meuperfil.PNG" alt="Image Example" width="400px">
-    <img src="meusagendamentos.PNG" alt="Image Example" width="400px">
-    <img src="footer.PNG" alt="Image Example" width="400px">
+    <img src="./imagensgithub/paginainicial.PNG" alt="Image Example" width="400px">
+    <img src="./imagensgithub/registro.PNG" alt="Image Example" width="400px">
+    <img src="./imagensgithub/login.PNG" alt="Image Example" width="400px">
+    <img src="./imagensgithub/meuperfil.PNG" alt="Image Example" width="400px">
+    <img src="./imagensgithub/meusagendamentos.PNG" alt="Image Example" width="400px">
+    <img src="./imagensgithub/footer.PNG" alt="Image Example" width="400px">
 </p>
 
 <h2 id="technologies">💻 Technologies</h2>
