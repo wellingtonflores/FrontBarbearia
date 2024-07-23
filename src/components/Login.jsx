@@ -26,7 +26,7 @@ export default function Login() {
       email: "",
       senha: ""
     });
-    navigate('/perfil');
+    navigate('/agendar');
   }
 
   return (

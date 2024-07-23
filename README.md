@@ -15,6 +15,7 @@
 
 <p align="center">
     <img src="./imagensgithub/paginainicial.PNG" alt="Image Example" width="400px">
+    <img src="./imagensgithub/paginainicial2.PNG" alt="Image Example" width="400px">
     <img src="./imagensgithub/registro.PNG" alt="Image Example" width="400px">
     <img src="./imagensgithub/login.PNG" alt="Image Example" width="400px">
     <img src="./imagensgithub/meuperfil.PNG" alt="Image Example" width="400px">

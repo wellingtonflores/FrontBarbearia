@@ -30,7 +30,6 @@ export async function logandoUsuarios(data) {
         const response = await axios.post(`${url}/usuarios/login`, data);
         const token = response.data.token;
         localStorage.setItem('token', token); 
-        alert('Login bem-sucedido');
     } catch (error) {
         console.error(error);
     }

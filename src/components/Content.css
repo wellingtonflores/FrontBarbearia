@@ -1,25 +1,41 @@
 .content-background {
-    height: 100vh;
-    background-image: url('https://barbeariatorres.com.br/wp-content/uploads/2022/06/Foto-Daniel-Diniz-9-scaled.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .button-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button-link:hover {
-    background-color: #333;
-  }
-  
+  height: 100vh;
+  background-image: url('https://barbeariatorres.com.br/wp-content/uploads/2022/06/Foto-Daniel-Diniz-9-scaled.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 15px 30px; /* Aumenta o tamanho do botão */
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.25rem; /* Aumenta o tamanho da fonte */
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #333;
+}
+
+.button-link-light {
+  display: inline-block;
+  padding: 15px 30px; /* Aumenta o tamanho do botão */
+  background-color: #333; /* Fundo mais claro que o fundo preto */
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.25rem; /* Aumenta o tamanho da fonte */
+  transition: background-color 0.3s ease;
+}
+
+.button-link-light:hover {
+  background-color: #555; /* Um pouco mais claro no hover */
+}
