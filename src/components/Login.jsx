@@ -20,13 +20,12 @@ export default function Login() {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    console.log(formData);
     await logandoUsuarios(formData);
     setFormData({
       email: "",
       senha: ""
     });
-    navigate('/agendar');
+    navigate('/');
   }
 
   return (

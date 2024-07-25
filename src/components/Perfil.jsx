@@ -6,6 +6,9 @@ import { useNavigate } from 'react-router-dom';
 export default function Perfil() {
   const [user, setUser] = useState({
     nome: '',
+    email: '',
+    whatsapp: '',
+    senha: ''
   });
 
   const [isEditing, setIsEditing] = useState(false);
@@ -20,15 +23,6 @@ export default function Perfil() {
     }
   };
 
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (!token) {
-      navigate('/login'); 
-    } else {
-      getData(); 
-    }
-  }, [navigate]); 
-
   const handleChange = (event) => {
     const { name, value } = event.target;
     setUser(prevUser => ({
@@ -39,15 +33,26 @@ export default function Perfil() {
 
   const handleSave = async () => {
     try {
-      await atualizarPerfilUsuario({ 
+      await atualizarPerfilUsuario({
         nome: user.nome,
       });
-      setIsEditing(false);
       await getData();
+      setIsEditing(false);
     } catch (error) {
-      console.error("Erro ao atualizar os dados do usuário:", error);
+      console.error("Erro ao atualizar os dados do usuário:", error); 
     }
   };
+
+  useEffect(() => {
+    (async () => {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        navigate('/login'); 
+      } else {
+        await getData(); 
+      }
+    })();
+  }, [navigate]);
 
   return (
     <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
@@ -172,21 +177,20 @@ export default function Perfil() {
                   id="senha"
                   name="senha"
                   type="password"
-                  value={user.senha}
+                  value="dwadwaoidjawoidwajdwoa"
                   disabled
                   className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                 />
               </div>
             </div>
             <div className="flex items-center justify-center">
-            <button
-  type="button"
-  onClick={() => setIsEditing(true)}
-  className="group relative w-auto flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
->
-  Editar
-</button>
-
+              <button
+                type="button"
+                onClick={() => setIsEditing(true)}
+                className="group relative w-auto flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+              >
+                Editar
+              </button>
             </div>
           </div>
         )}

@@ -75,7 +75,6 @@ export default function Agendamento() {
 
     async function handleClickButton(event){
         event.preventDefault();
-        console.log("Dados enviados: ", agendamentoData)
         await criarAgendamento(agendamentoData)
     }
 

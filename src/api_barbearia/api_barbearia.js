@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:4000/api";
+const url = "https://barbearia-hyi0.onrender.com/api";
 
 axios.interceptors.request.use(
     config => {
@@ -38,6 +38,7 @@ export async function logandoUsuarios(data) {
 export async function obterPerfilUsuario() {
     try {
         const response = await axios.get(`${url}/usuarios/perfil`);
+        console.log(response.data);
         return response.data;
     } catch (error) {
         console.error('Erro ao obter perfil do usuário:', error);

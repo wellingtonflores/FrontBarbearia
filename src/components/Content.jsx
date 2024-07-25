@@ -29,7 +29,7 @@ export default function Content() {
           </div>
           <div className="services-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <div className="service-column bg-white bg-opacity-75 p-4 rounded-lg flex flex-col items-center justify-center h-96">
-              <img src="https://via.placeholder.com/300x300.png?text=Serviço+4" alt="Serviço 4" className="mb-2 rounded-lg w-full h-full object-cover" />
+              <img src="" alt="Serviço 4" className="mb-2 rounded-lg w-full h-full object-cover" />
               <h2 className="text-2xl font-bold mb-2">Serviço 4</h2>
               <p>Descrição do Serviço 4</p>
             </div>
@@ -39,7 +39,7 @@ export default function Content() {
               <p>Descrição do Serviço 5</p>
             </div>
             <div className="service-column bg-white bg-opacity-75 p-4 rounded-lg flex flex-col items-center justify-center h-96">
-              <img src="https://via.placeholder.com/300x300.png?text=Serviço+6" alt="Serviço 6" className="mb-2 rounded-lg w-full h-full object-cover" />
+              <img src="" alt="Serviço 6" className="mb-2 rounded-lg w-full h-full object-cover" />
               <h2 className="text-2xl font-bold mb-2">Serviço 6</h2>
               <p>Descrição do Serviço 6</p>
             </div>

@@ -24,18 +24,3 @@
   background-color: #333;
 }
 
-.button-link-light {
-  display: inline-block;
-  padding: 15px 30px; /* Aumenta o tamanho do botão */
-  background-color: #333; /* Fundo mais claro que o fundo preto */
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 1.25rem; /* Aumenta o tamanho da fonte */
-  transition: background-color 0.3s ease;
-}
-
-.button-link-light:hover {
-  background-color: #555; /* Um pouco mais claro no hover */
-}
