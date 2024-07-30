@@ -38,7 +38,6 @@ export async function logandoUsuarios(data) {
 export async function obterPerfilUsuario() {
     try {
         const response = await axios.get(`${url}/usuarios/perfil`);
-        console.log(response.data);
         return response.data;
     } catch (error) {
         console.error('Erro ao obter perfil do usuário:', error);
