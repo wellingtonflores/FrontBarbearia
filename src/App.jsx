@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Registro from '../src/components/Registro';
-import PaginaInicial from "../src/components/PaginaInicial";
+import Registro from '../src/pages/Registro';
+import PaginaInicial from "../src/pages/PaginaInicial";
 import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
-import Login from "../src/components/Login";
-import Perfil from "../src/components/Perfil";
-import Agendamento from "../src/components/Agendamento";
-import MeusAgendamentos from "../src/components/MeusAgendamentos";
+import Login from "../src/pages/Login";
+import Perfil from "../src/pages/Perfil";
+import Agendamento from "../src/pages/Agendamento";
+import MeusAgendamentos from "../src/pages/MeusAgendamentos";
 
 
 function App() {
