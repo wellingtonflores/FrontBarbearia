@@ -1,5 +1,5 @@
 import {Helmet} from "react-helmet";
-import Content from "./Content";
+import Content from "../components/Content";
 
 export default function PaginaInicial(){
     return (
