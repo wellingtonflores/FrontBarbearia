@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Registro from '../src/components/Registro';
+import Registro from '../src/pages/Registro';
 import PaginaInicial from "../src/pages/PaginaInicial";
 import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
