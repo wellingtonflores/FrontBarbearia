@@ -1,18 +1,16 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Registro from './Registro';
-import PaginaInicial from "./PaginaInicial";
-import Footer from "./Footer";
-import Header from "./Header";
-import Login from "./Login";
-import Perfil from "./Perfil";
-import Agendamento from "./Agendamento";
-import MeusAgendamentos from "./MeusAgendamentos"
+import Registro from '../src/components/Registro';
+import PaginaInicial from "../src/components/PaginaInicial";
+import Footer from "../src/components/Footer";
+import Header from "../src/components/Header";
+import Login from "../src/components/Login";
+import Perfil from "../src/components/Perfil";
+import Agendamento from "../src/components/Agendamento";
+import MeusAgendamentos from "../src/components/MeusAgendamentos";
 
 
 function App() {
   return (
-    <div>
-
       <Router>
         <Header/>
         <Routes>
@@ -23,11 +21,8 @@ function App() {
           <Route path="/agendar" element={<Agendamento/>}/>
           <Route path="/agendamentos" element={<MeusAgendamentos/>}/>
         </Routes>
-         <Footer/>
+        <Footer/>
       </Router>
-     
-    </div>
-    
   );
 }
 
