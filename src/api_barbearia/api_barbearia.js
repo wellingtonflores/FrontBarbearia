@@ -22,6 +22,7 @@ export async function registrandoUsuarios(data) {
         return response.data; 
     } catch (error) {
         console.error(error);
+        alert(error.response.data.error);
     }
 }
 
@@ -32,6 +33,7 @@ export async function logandoUsuarios(data) {
         localStorage.setItem('token', token); 
     } catch (error) {
         console.error(error);
+        alert(error.response.data.error);
     }
 }
 
@@ -52,6 +54,7 @@ export async function atualizarPerfilUsuario(data) {
         return response.data;
     } catch (error) {
         console.error('Erro ao atualizar perfil do usuário:', error);
+        alert(error.response.data.error);
     }
 }
 
@@ -80,6 +83,7 @@ export async function criarAgendamento(data){
         return response.data
     } catch (error) {
         console.error(error)
+        alert(error.response.data.error);
     }
 }
 
